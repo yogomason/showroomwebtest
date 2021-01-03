@@ -16,8 +16,16 @@
     <aside>
         <figure>
             <figcaption>Showroom</figcaption>
-            <img src="static/img/menu.svg">
+            
         </figure>
+        <img src="static/img/menu.svg">
+        <nav>
+            <ul>
+                <li><a href="#">User</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Examples</a></li>
+            </ul>
+        </nav>
     </aside>
     <div id="wrapper">
         <a href="#" class="cta">0-10 Visitors<br/>£50</a>
@@ -25,7 +33,19 @@
         <a href="#" class="cta">51-100 Visitors<br/>£250</a>
         <a href="#" class="cta">101-500 Visitors<br/>£500</a>
     </div>
+        <script type="text/javascript">
 
+            (function(){
+                var menu = document.querySelector('ul'),
+                    menulink = document.querySelector('img');
+                
+                menulink.addEventListener('click', function(e){
+                    menu.classList.toggle('active');
+                    e.preventDefault();
+                });
+            })();
+
+        </script>
         
     </body>
 </html>
