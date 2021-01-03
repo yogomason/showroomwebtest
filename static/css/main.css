@@ -19,3 +19,9 @@ body {
     padding:2em;
     background:#fff;
 }
+
+figcaption{
+    color:#fff;
+    font-size:1.3em;
+    font-weight:bold;
+}
