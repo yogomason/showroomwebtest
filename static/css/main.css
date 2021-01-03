@@ -13,15 +13,42 @@ body {
 }
 
 #wrapper{
-    display: block;
+    display: grid;
     margin: 40px;
-    grid-template-columns: auto 40px;
-    padding:2em;
+    padding:1em;
     background:#fff;
+}
+
+figure{
+    display:grid;
+    grid-template-columns:auto 40px ;
 }
 
 figcaption{
     color:#fff;
     font-size:1.3em;
     font-weight:bold;
+}
+
+#pricewrapper{
+    display:grid;
+    grid-template-columns:200px auto;
+}
+
+img{
+    cursor: pointer;
+    width:40px
+}
+
+.cta {
+    display: block;
+    color: #fff;
+    background: #9256DC;
+    padding:25px 50px;
+    text-align: center;
+    font-size:1.2em;
+    font-weight: bold;
+    border-radius:4px;
+    margin: 0.4em 0.2em;
+    text-decoration:none;
 }
